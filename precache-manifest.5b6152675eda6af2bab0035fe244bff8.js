@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41b0c7ffc2dc81bfd17095583c8b6c9e",
+    "revision": "4f62c655d5be159b5eea1211bd2ef690",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c60e59f0cdafabd7cbda",
+    "revision": "4d70faebbd1f90aa3605",
     "url": "/portfolio/static/css/main.bd1bc55f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.3db5cc51.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c60e59f0cdafabd7cbda",
-    "url": "/portfolio/static/js/main.82cd29c6.chunk.js"
+    "revision": "4d70faebbd1f90aa3605",
+    "url": "/portfolio/static/js/main.fde450cf.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/cooptationImg.cd318bc6.jpg"
   },
   {
-    "revision": "9759b56d3a491c73a255f763934e74c4",
-    "url": "/portfolio/static/media/cv_en.9759b56d.pdf"
+    "revision": "8c16917e49610d0820d815948dd0b46b",
+    "url": "/portfolio/static/media/cv_en.8c16917e.pdf"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
