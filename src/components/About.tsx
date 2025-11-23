@@ -1,4 +1,4 @@
-import styles from './About.module.css'
+import styles from './About.module.css';
 
 export function About() {
   return (
@@ -16,7 +16,7 @@ export function About() {
         <div className={styles.content}>
           <div className={styles.terminalBlock}>
             <pre className={styles.terminalOutput}>
-{`$ whoami
+              {`$ whoami
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -53,7 +53,7 @@ $ echo $PHILOSOPHY
 
           <div className={styles.terminalBlock}>
             <pre className={styles.terminalOutput}>
-{`$ ./current_focus.sh
+              {`$ ./current_focus.sh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   → Building scalable web applications with modern frameworks
   → Exploring the intersection of AI and software development
@@ -64,5 +64,5 @@ $ echo $PHILOSOPHY
         </div>
       </div>
     </section>
-  )
+  );
 }

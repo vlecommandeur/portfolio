@@ -1,8 +1,8 @@
-import { useTheme } from '../hooks/useTheme'
-import styles from './ThemeToggle.module.css'
+import { useTheme } from '../hooks/useTheme';
+import styles from './ThemeToggle.module.css';
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
@@ -12,5 +12,5 @@ export function ThemeToggle() {
     >
       {theme === 'dark' ? '☀️' : '🌙'}
     </button>
-  )
+  );
 }

@@ -132,7 +132,11 @@
 
 .skillProgress {
   height: 100%;
-  background: linear-gradient(90deg, var(--accent-color), var(--secondary-accent));
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    var(--secondary-accent)
+  );
   border-radius: 3px;
   transition: width 1s ease-out;
   animation: skillLoad 1.5s ease-out;

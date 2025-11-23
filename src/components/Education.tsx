@@ -1,29 +1,29 @@
-import styles from './Education.module.css'
+import styles from './Education.module.css';
 
 const educationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    school: "University of Technology",
-    period: "2014 - 2018",
+    degree: 'Bachelor of Science in Computer Science',
+    school: 'University of Technology',
+    period: '2014 - 2018',
     details: [
-      "GPA: 3.8/4.0",
+      'GPA: 3.8/4.0',
       "Dean's List: 6 semesters",
-      "Research: Machine Learning and Natural Language Processing",
-      "Thesis: Neural Networks in Autonomous Systems"
-    ]
+      'Research: Machine Learning and Natural Language Processing',
+      'Thesis: Neural Networks in Autonomous Systems',
+    ],
   },
   {
-    degree: "Full Stack Web Development Bootcamp",
-    school: "Coding Academy",
-    period: "2018",
+    degree: 'Full Stack Web Development Bootcamp',
+    school: 'Coding Academy',
+    period: '2018',
     details: [
-      "Intensive 12-week program",
-      "Focus on modern JavaScript frameworks",
-      "Team projects using agile methodology",
-      "Graduated with distinction"
-    ]
-  }
-]
+      'Intensive 12-week program',
+      'Focus on modern JavaScript frameworks',
+      'Team projects using agile methodology',
+      'Graduated with distinction',
+    ],
+  },
+];
 
 export function Education() {
   return (
@@ -53,7 +53,7 @@ export function Education() {
               <div className={styles.educationDetails}>
                 <div className={styles.terminalBlock}>
                   <pre className={styles.terminalOutput}>
-{`$ cat education_${index + 1}.txt
+                    {`$ cat education_${index + 1}.txt
 ${edu.details.map(detail => `> ${detail}`).join('\n')}`}
                   </pre>
                 </div>
@@ -64,7 +64,7 @@ ${edu.details.map(detail => `> ${detail}`).join('\n')}`}
 
         <div className={styles.terminalBlock}>
           <pre className={styles.terminalOutput}>
-{`$ echo "Continuous Learning Journey..."
+            {`$ echo "Continuous Learning Journey..."
 > Online Courses: 20+ completed
 > Certifications: AWS Solutions Architect, Google Cloud Professional
 > Conferences: React Conf, Node.js Summit, AWS re:Invent`}
@@ -72,5 +72,5 @@ ${edu.details.map(detail => `> ${detail}`).join('\n')}`}
         </div>
       </div>
     </section>
-  )
+  );
 }

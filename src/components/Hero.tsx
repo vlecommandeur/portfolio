@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import styles from './Hero.module.css'
+import { useState, useEffect } from 'react';
+import styles from './Hero.module.css';
 
 const asciiArt = `
 ███╗   ███╗ █████╗ ██╗     ██╗
@@ -13,7 +13,7 @@ const asciiArt = `
 ║     FULL STACK DEVELOPER       ║
 ║    PASSIONATE ABOUT CODE       ║
 ╚════════════════════════════════╝
-`
+`;
 
 const terminalPrompt = `$ greeting = "Hello, World! I'm a passionate developer..."
 $ echo $greeting
@@ -22,28 +22,28 @@ $ echo $greeting
 > Or just scroll down to discover more
 $
 █
-`
+`;
 
 export function Hero() {
-  const [displayText, setDisplayText] = useState('')
-  const [isTyping, setIsTyping] = useState(true)
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    const fullText = terminalPrompt
-    let currentIndex = 0
+    const fullText = terminalPrompt;
+    let currentIndex = 0;
 
     const typingInterval = setInterval(() => {
       if (currentIndex < fullText.length) {
-        setDisplayText(prev => prev + fullText[currentIndex])
-        currentIndex++
+        setDisplayText(prev => prev + fullText[currentIndex]);
+        currentIndex++;
       } else {
-        setIsTyping(false)
-        clearInterval(typingInterval)
+        setIsTyping(false);
+        clearInterval(typingInterval);
       }
-    }, 30)
+    }, 30);
 
-    return () => clearInterval(typingInterval)
-  }, [])
+    return () => clearInterval(typingInterval);
+  }, []);
 
   return (
     <section className={styles.hero} id="home">
@@ -69,5 +69,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
