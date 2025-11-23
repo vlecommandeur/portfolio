@@ -4,8 +4,12 @@ export function Contact() {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/cv.pdf';
-    link.download = 'john_doe_cv.pdf';
+    link.download = 'valentin-lecommandeur-cv.pdf';
+    link.style.display = 'none';
+
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   const contactLinks = [
