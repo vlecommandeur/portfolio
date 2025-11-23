@@ -4,37 +4,39 @@ const skillsData = [
   {
     category: 'Frontend',
     items: [
-      { name: 'React', level: 90 },
-      { name: 'TypeScript', level: 85 },
-      { name: 'Vue.js', level: 80 },
-      { name: 'CSS/Sass', level: 88 },
+      { name: 'React', level: 95 },
+      { name: 'Next.js', level: 85 },
+      { name: 'TypeScript', level: 90 },
+      { name: 'Redux', level: 85 },
+      { name: 'React Query', level: 80 },
+      { name: 'Tailwind', level: 75 },
+      { name: 'Apollo', level: 70 },
+      { name: 'GraphQL', level: 75 },
     ],
   },
   {
     category: 'Backend',
     items: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Python', level: 80 },
-      { name: 'PostgreSQL', level: 75 },
-      { name: 'MongoDB', level: 70 },
-    ],
-  },
-  {
-    category: 'DevOps',
-    items: [
-      { name: 'Docker', level: 75 },
-      { name: 'AWS', level: 70 },
-      { name: 'CI/CD', level: 80 },
-      { name: 'Kubernetes', level: 60 },
+      { name: 'Node.js', level: 90 },
+      { name: 'Express', level: 85 },
+      { name: 'PostgreSQL', level: 80 },
+      { name: 'MongoDB', level: 75 },
     ],
   },
   {
     category: 'Tools',
     items: [
-      { name: 'Git', level: 90 },
-      { name: 'VS Code', level: 95 },
-      { name: 'Figma', level: 70 },
-      { name: 'Terminal', level: 88 },
+      { name: 'Git', level: 95 },
+      { name: 'Docker', level: 80 },
+      { name: 'CI/CD', level: 85 },
+    ],
+  },
+  {
+    category: 'Testing',
+    items: [
+      { name: 'Jest', level: 85 },
+      { name: 'Cypress', level: 80 },
+      { name: 'React Testing Library', level: 85 },
     ],
   },
 ];
@@ -50,15 +52,6 @@ export function Skills() {
           <div className={styles.sectionDivider}>
             {Array(50).fill('─').join('')}
           </div>
-        </div>
-
-        <div className={styles.terminalBlock}>
-          <pre className={styles.terminalOutput}>
-            {`$ ./skills.sh --check
-┌─────────────────────────────────────────────────────────────┐
-│             SKILL PROFICIENCY MATRIX                        │
-└─────────────────────────────────────────────────────────────┘`}
-          </pre>
         </div>
 
         <div className={styles.skillsGrid}>
@@ -86,14 +79,6 @@ export function Skills() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className={styles.terminalBlock}>
-          <pre className={styles.terminalOutput}>
-            {`$ echo "Learning is a continuous process..."
-> Currently exploring: Rust, WebAssembly, Advanced AI/ML
-> Next on the list: GraphQL, Next.js, Advanced React Patterns`}
-          </pre>
         </div>
       </div>
     </section>

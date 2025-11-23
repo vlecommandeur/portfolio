@@ -2,25 +2,30 @@ import styles from './Education.module.css';
 
 const educationData = [
   {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of Technology',
-    period: '2014 - 2018',
+    degree: "Master's degree in Computer Science",
+    school: 'Université de La Rochelle',
+    period: '2016 - 2018',
     details: [
-      'GPA: 3.8/4.0',
-      "Dean's List: 6 semesters",
-      'Research: Machine Learning and Natural Language Processing',
-      'Thesis: Neural Networks in Autonomous Systems',
+      'Exchange year (M1): University of South Wales — Cardiff, UK',
+      'Exchange year (M2): USTH — Hanoi, Vietnam',
     ],
   },
   {
-    degree: 'Full Stack Web Development Bootcamp',
-    school: 'Coding Academy',
-    period: '2018',
+    degree: 'Bachelor in Computer Science',
+    school: 'Université de La Rochelle',
+    period: '2015 - 2016',
     details: [
-      'Intensive 12-week program',
-      'Focus on modern JavaScript frameworks',
-      'Team projects using agile methodology',
-      'Graduated with distinction',
+      'Foundation studies in computer science principles',
+      'Programming fundamentals and software engineering',
+    ],
+  },
+  {
+    degree: 'DUT in Computer Science',
+    school: 'IUT La Rochelle',
+    period: '2013 - 2015',
+    details: [
+      'Two-year technical degree in computer science',
+      'Hands-on development and system administration training',
     ],
   },
 ];
@@ -65,9 +70,7 @@ ${edu.details.map(detail => `> ${detail}`).join('\n')}`}
         <div className={styles.terminalBlock}>
           <pre className={styles.terminalOutput}>
             {`$ echo "Continuous Learning Journey..."
-> Online Courses: 20+ completed
-> Certifications: AWS Solutions Architect, Google Cloud Professional
-> Conferences: React Conf, Node.js Summit, AWS re:Invent`}
+> Online Courses: 20+ completed`}
           </pre>
         </div>
       </div>

@@ -2,9 +2,8 @@ import styles from './Contact.module.css';
 
 export function Contact() {
   const handleDownloadCV = () => {
-    // In a real app, this would be a link to an actual PDF file
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; // Placeholder - you'd replace with actual CV file
+    link.href = '/cv.pdf';
     link.download = 'john_doe_cv.pdf';
     link.click();
   };
@@ -12,21 +11,15 @@ export function Contact() {
   const contactLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/vlecommandeur',
       icon: '🐙',
       description: 'Check out my open-source contributions',
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/lecommandeurvalentin/',
       icon: '💼',
       description: 'Connect with me professionally',
-    },
-    {
-      name: 'Email',
-      url: 'mailto:hello@example.com',
-      icon: '📧',
-      description: 'Get in touch for opportunities',
     },
   ];
 
@@ -40,16 +33,6 @@ export function Contact() {
           <div className={styles.sectionDivider}>
             {Array(50).fill('─').join('')}
           </div>
-        </div>
-
-        <div className={styles.terminalBlock}>
-          <pre className={styles.terminalOutput}>
-            {`$ ./contact.sh --help
-┌─────────────────────────────────────────────────────────────┐
-│                  GET IN TOUCH                                │
-│  No forms, no backend - just direct connections              │
-└─────────────────────────────────────────────────────────────┘`}
-          </pre>
         </div>
 
         <div className={styles.contactGrid}>

@@ -18,48 +18,22 @@ export function About() {
             <pre className={styles.terminalOutput}>
               {`$ whoami
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-
-$ echo $PASSION
-  Full-stack development | Clean architecture | Performance optimization
-  Open-source enthusiast | Continuous learning | Problem-solving
-
-$ echo $PHILOSOPHY
-  "Write code that humans can understand, not just computers."
+  Full-stack JavaScript developer with 6 years of experience building and maintaining
+  web applications using React, TypeScript and Node.js. Comfortable across the full
+  lifecycle: UI development, backend services, API design, testing, CI/CD and deployment.
 `}
             </pre>
           </div>
 
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>5+</div>
+              <div className={styles.statNumber}>6</div>
               <div className={styles.statLabel}>Years Experience</div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statNumber}>50+</div>
-              <div className={styles.statLabel}>Projects Completed</div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statNumber}>15+</div>
-              <div className={styles.statLabel}>Technologies</div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statNumber}>∞</div>
               <div className={styles.statLabel}>Lines of Code</div>
             </div>
-          </div>
-
-          <div className={styles.terminalBlock}>
-            <pre className={styles.terminalOutput}>
-              {`$ ./current_focus.sh
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  → Building scalable web applications with modern frameworks
-  → Exploring the intersection of AI and software development
-  → Contributing to open-source communities
-  → Mentoring junior developers`}
-            </pre>
           </div>
         </div>
       </div>

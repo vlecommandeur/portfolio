@@ -1,24 +1,17 @@
 import { useState, useEffect } from 'react';
 import styles from './Hero.module.css';
 
-const asciiArt = `
-███╗   ███╗ █████╗ ██╗     ██╗
-████╗ ████║██╔══██╗██║     ██║
-██╔████╔██║███████║██║     ██║
-██║╚██╔╝██║██╔══██║██║     ██║
-██║ ╚═╝ ██║██║  ██║███████╗███████╗
-╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
+const asciiArt =
+`
+ /**  ▗▖  ▗▖ ▗▄▖ ▗▖   ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖▗▖  ▗▖
+ *    ▐▌  ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▛▚▖▐▌  █    █  ▐▛▚▖▐▌
+ *    ▐▌  ▐▌▐▛▀▜▌▐▌   ▐▛▀▀▘▐▌ ▝▜▌  █    █  ▐▌ ▝▜▌
+ */    ▝▚▞▘ ▐▌ ▐▌▐▙▄▄▖▐▙▄▄▖▐▌  ▐▌  █  ▗▄█▄▖▐▌  ▐▌`
 
-╔════════════════════════════════╗
-║     FULL STACK DEVELOPER       ║
-║    PASSIONATE ABOUT CODE       ║
-╚════════════════════════════════╝
-`;
-
-const terminalPrompt = `$ greeting = "Hello, World! I'm a passionate developer..."
+const terminalPrompt = `$ greeting = "Hello, World!"
 $ echo $greeting
-> Welcome to my terminal-style CV
-> Use the navigation below to explore my sections
+> Welcome to my CV
+> Use the navigation to explore my sections
 > Or just scroll down to discover more
 $
 █
@@ -54,7 +47,7 @@ export function Hero() {
             <span className={styles.buttonYellow}></span>
             <span className={styles.buttonGreen}></span>
           </div>
-          <div className={styles.terminalTitle}>john_doe@terminal:~</div>
+          <div className={styles.terminalTitle}>valentin@terminal:~</div>
         </div>
 
         <div className={styles.terminalContent}>
