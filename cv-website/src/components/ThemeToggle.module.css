@@ -1,0 +1,26 @@
+.themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.themeToggle:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: scale(1.1);
+}
+
+.themeToggle:focus {
+  outline: 2px solid var(--secondary-accent);
+  outline-offset: 2px;
+}

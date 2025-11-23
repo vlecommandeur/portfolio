@@ -1,0 +1,110 @@
+:root {
+  /* Dracula Theme Colors */
+  --dracula-bg: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-selection: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+
+  /* Light Theme Colors */
+  --light-bg: #ffffff;
+  --light-current-line: #f0f0f0;
+  --light-selection: #e0e0e0;
+  --light-foreground: #333333;
+  --light-comment: #888888;
+  --light-cyan: #0088cc;
+  --light-green: #008800;
+  --light-orange: #ff8800;
+  --light-pink: #ff0088;
+  --light-purple: #8800ff;
+  --light-red: #cc0000;
+  --light-yellow: #cc9900;
+
+  /* Default theme (dark) */
+  --bg-color: var(--dracula-bg);
+  --current-line-color: var(--dracula-current-line);
+  --selection-color: var(--dracula-selection);
+  --text-color: var(--dracula-foreground);
+  --accent-color: var(--dracula-cyan);
+  --secondary-accent: var(--dracula-green);
+  --highlight-color: var(--dracula-yellow);
+  --emphasis-color: var(--dracula-purple);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-color: var(--light-bg);
+  --current-line-color: var(--light-current-line);
+  --selection-color: var(--light-selection);
+  --text-color: var(--light-foreground);
+  --accent-color: var(--light-cyan);
+  --secondary-accent: var(--light-green);
+  --highlight-color: var(--light-yellow);
+  --emphasis-color: var(--light-purple);
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Terminal cursor effect */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: var(--accent-color);
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--current-line-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--selection-color);
+  color: var(--text-color);
+}

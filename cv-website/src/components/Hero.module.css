@@ -1,0 +1,138 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.terminal {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: terminalGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes terminalGlow {
+  from {
+    box-shadow: 0 20px 40px rgba(139, 233, 253, 0.1);
+  }
+  to {
+    box-shadow: 0 20px 40px rgba(139, 233, 253, 0.2);
+  }
+}
+
+.terminalHeader {
+  background-color: var(--current-line-color);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.terminalButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.buttonRed,
+.buttonYellow,
+.buttonGreen {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.buttonRed {
+  background-color: #ff5f56;
+}
+
+.buttonYellow {
+  background-color: #ffbd2e;
+}
+
+.buttonGreen {
+  background-color: #27c93f;
+}
+
+.terminalTitle {
+  color: var(--text-color);
+  font-size: 14px;
+  opacity: 0.8;
+  flex: 1;
+  text-align: center;
+}
+
+.terminalContent {
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.asciiArt {
+  color: var(--emphasis-color);
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-align: center;
+  white-space: pre;
+  overflow-x: auto;
+  user-select: none;
+  letter-spacing: 0.1em;
+}
+
+.terminalOutput {
+  margin-top: 2rem;
+}
+
+.typingText {
+  color: var(--secondary-accent);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: var(--accent-color);
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .terminalContent {
+    padding: 1rem;
+  }
+
+  .asciiArt {
+    font-size: 8px;
+    letter-spacing: 0.05em;
+  }
+
+  .typingText {
+    font-size: 12px;
+  }
+
+  .terminalTitle {
+    font-size: 12px;
+  }
+}

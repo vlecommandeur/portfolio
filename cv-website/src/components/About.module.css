@@ -1,0 +1,148 @@
+.about {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.prompt {
+  color: var(--secondary-accent);
+  font-size: 1.8rem;
+}
+
+.sectionDivider {
+  color: var(--current-line-color);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.terminalBlock {
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.terminalBlock:hover {
+  box-shadow: 0 8px 24px rgba(139, 233, 253, 0.1);
+}
+
+.terminalOutput {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--emphasis-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(189, 147, 249, 0.1);
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--emphasis-color);
+  margin-bottom: 0.5rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .prompt {
+    font-size: 1.4rem;
+  }
+
+  .sectionDivider {
+    font-size: 12px;
+  }
+
+  .terminalOutput {
+    font-size: 12px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .statLabel {
+    font-size: 0.8rem;
+  }
+
+  .terminalBlock {
+    padding: 1rem;
+  }
+}

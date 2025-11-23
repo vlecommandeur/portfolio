@@ -1,0 +1,144 @@
+.navigation {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.terminalNav {
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navHeader {
+  color: var(--secondary-accent);
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.prompt {
+  color: var(--emphasis-color);
+}
+
+.path {
+  color: var(--highlight-color);
+}
+
+.cursor {
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  background-color: var(--accent-color);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  margin-bottom: 8px;
+}
+
+.navLink {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: inherit;
+  text-align: left;
+  width: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--secondary-accent);
+  transform: translateX(-2px);
+  transition: transform 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: var(--current-line-color);
+  color: var(--secondary-accent);
+  padding-left: 16px;
+}
+
+.navLink.active {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.navLink.active::before {
+  transform: translateX(0);
+  background-color: var(--bg-color);
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    padding: 20px;
+  }
+
+  .terminalNav {
+    display: flex;
+    overflow-x: auto;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .navHeader {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navList li {
+    margin: 0;
+  }
+
+  .navLink {
+    white-space: nowrap;
+    padding: 8px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .navLink::before {
+    display: none;
+  }
+}
