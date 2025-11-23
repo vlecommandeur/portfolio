@@ -1,41 +1,35 @@
 :root {
-  /* Dracula Theme Colors */
-  --dracula-bg: #282a36;
-  --dracula-current-line: #44475a;
-  --dracula-selection: #44475a;
-  --dracula-foreground: #f8f8f2;
-  --dracula-comment: #6272a4;
-  --dracula-cyan: #8be9fd;
-  --dracula-green: #50fa7b;
-  --dracula-orange: #ffb86c;
-  --dracula-pink: #ff79c6;
-  --dracula-purple: #bd93f9;
-  --dracula-red: #ff5555;
-  --dracula-yellow: #f1fa8c;
+  /* Elegant Dark Theme Colors */
+  --dark-bg: #070F2B;
+  --dark-current-line: #1B1A55;
+  --dark-selection: #1B1A55;
+  --dark-foreground: #9290C3;
+  --dark-comment: #535C91;
+  --dark-accent: #535C91;
+  --dark-secondary-accent: #9290C3;
+  --dark-highlight: #9290C3;
+  --dark-emphasis: #535C91;
 
-  /* Light Theme Colors */
-  --light-bg: #ffffff;
-  --light-current-line: #f0f0f0;
-  --light-selection: #e0e0e0;
-  --light-foreground: #333333;
-  --light-comment: #888888;
-  --light-cyan: #0088cc;
-  --light-green: #008800;
-  --light-orange: #ff8800;
-  --light-pink: #ff0088;
-  --light-purple: #8800ff;
-  --light-red: #cc0000;
-  --light-yellow: #cc9900;
+  /* Comfortable Light Theme Colors */
+  --light-bg: #9290C3;
+  --light-current-line: #535C91;
+  --light-selection: #535C91;
+  --light-foreground: #070F2B;
+  --light-comment: #1B1A55;
+  --light-accent: #1B1A55;
+  --light-secondary-accent: #070F2B;
+  --light-highlight: #070F2B;
+  --light-emphasis: #1B1A55;
 
   /* Default theme (dark) */
-  --bg-color: var(--dracula-bg);
-  --current-line-color: var(--dracula-current-line);
-  --selection-color: var(--dracula-selection);
-  --text-color: var(--dracula-foreground);
-  --accent-color: var(--dracula-cyan);
-  --secondary-accent: var(--dracula-green);
-  --highlight-color: var(--dracula-yellow);
-  --emphasis-color: var(--dracula-purple);
+  --bg-color: var(--dark-bg);
+  --current-line-color: var(--dark-current-line);
+  --selection-color: var(--dark-selection);
+  --text-color: var(--dark-foreground);
+  --accent-color: var(--dark-accent);
+  --secondary-accent: var(--dark-secondary-accent);
+  --highlight-color: var(--dark-highlight);
+  --emphasis-color: var(--dark-emphasis);
 }
 
 /* Light theme */
@@ -44,10 +38,10 @@
   --current-line-color: var(--light-current-line);
   --selection-color: var(--light-selection);
   --text-color: var(--light-foreground);
-  --accent-color: var(--light-cyan);
-  --secondary-accent: var(--light-green);
-  --highlight-color: var(--light-yellow);
-  --emphasis-color: var(--light-purple);
+  --accent-color: var(--light-accent);
+  --secondary-accent: var(--light-secondary-accent);
+  --highlight-color: var(--light-highlight);
+  --emphasis-color: var(--light-emphasis);
 }
 
 /* Global styles */
